@@ -2,90 +2,89 @@
     <p-header class="text-center">
         DFC View/Edit
     </p-header>
-    <div class="ui-g">
-        <div class="ui-g-3 backgroundBlue">
-            <div class="ui-g-12">
+    <div class="ui-g marginT18">
+        <div class="col-sm-3 well backgroundBlue">
+            <div class="col-sm-12">
                 <textarea pInputTextarea [(ngModel)]="property"></textarea>
             </div>
-            <div class="ui-g-12">
+            <div class="form-group col-sm-12">
                <label>Program-MY</label>
                 <input type="text" pInputText />
             </div>
-            <div class="ui-g-12">
+            <div class="col-sm-12">
                 <label>Checklist</label>
                 <input type="text" pInputText />
             </div>
-
         </div>
-        <div class="ui-g-8">
-            <div class="ui-g-12">
-                <div class="dropdown ui-g-2">
+        <div class="col-sm-8">
+            <div class="col-sm-12">
+                <div class="dropdown col-sm-2">
                 <p-dropdown [options]="cities" [(ngModel)]="P0000" placeholder="P0000" optionLabel="name"></p-dropdown>
                 </div>
-                <div class="checkbox ui-g-1">
+                <div class="checkbox col-sm-1">
                     <p-checkbox name="groupname" value="val1" [(ngModel)]="selectedValues"></p-checkbox>
                 </div>
 
-                    <div class="ui-g-3">
+                    <div class="col-sm-3">
                         <div class="ui-inputgroup" >
                             <input class="width100percent" type="text" pInputText placeholder="">
                         </div>
                     </div>
-                    <div class="ui-g-3">
+                    <div class="col-sm-3">
                         <div class="ui-inputgroup">
                             <input class="width100percent"  type="text" pInputText placeholder="">
                         </div>
                     </div>
 
-                <div class="checkbox ui-g-2">
+                <div class="checkbox col-sm-2">
                     <p-checkbox name="groupname" value="val1" [(ngModel)]="selectedValues"></p-checkbox>
-                    <label for="pwd">Approved</label>
+                    <label>Approved</label>
                 </div>
             </div>
-            <div class="ui-g-12">
-                    <div class="checkbox ui-g-1">
+            <div class="col-sm-12 marginT18">
+                    <div class="checkbox col-sm-2">
                         <p-checkbox name="groupname" value="val1" [(ngModel)]="selectedValues"></p-checkbox>
-                        <label for="pwd">Chassis</label>
+                        <label>Chassis</label><br>
                         <p-checkbox name="groupname" value="val1" [(ngModel)]="selectedValues"></p-checkbox>
-                        <label for="pwd">Dyno</label>
+                        <label>Dyno</label>
                     </div>
-                <div class=" ui-g-1">
+                <div class="col-sm-1">
                     <label>Effort Estimated</label>
                     <div class="dropdown">
                         <p-dropdown [options]="cities" [(ngModel)]="P0000" placeholder="1" optionLabel="name"></p-dropdown>
                     </div>
                 </div>
-                <div class="ui-g-1">
+                <div class="col-sm-1 paddingR11">
                     <label >Fault Class Error Target</label>
                     <div class="dropdown">
                         <p-dropdown [options]="cities" [(ngModel)]="P0000" placeholder="0" optionLabel="name"></p-dropdown>
                     </div>
                 </div>
-                <div class="form-group ui-g-1">
+                <div class="form-group col-sm-1">
                     <label>Control Mask</label>
                     <div class="dropdown">
                         <p-dropdown [options]="cities" [(ngModel)]="P0000" placeholder="3584" optionLabel="name"></p-dropdown>
                     </div>
                 </div>
-                <div class="form-group ui-g-1 marginT18">
+                <div class="form-group col-sm-1 marginT18">
                     <label>Ddisp</label>
                     <div class="dropdown">
                         <p-dropdown [options]="cities" [(ngModel)]="P0000" placeholder="0" optionLabel="name"></p-dropdown>
                     </div>
                 </div>
-                <div class="form-group ui-g-1 marginT18">
+                <div class="form-group col-sm-1 marginT18">
                     <label>Env</label>
                     <div class="dropdown">
                         <p-dropdown [options]="cities" [(ngModel)]="P0000" placeholder="xSet2" optionLabel="name"></p-dropdown>
                     </div>
                 </div>
-                <div class="form-group ui-g-1 marginT18">
+                <div class="form-group col-sm-1 marginT18">
                     <label>Fault Type</label>
                     <div class="dropdown">
                         <p-dropdown [options]="cities" [(ngModel)]="P0000" placeholder="0" optionLabel="name"></p-dropdown>
                     </div>
                 </div>
-                <div class="form-group ui-g-1 marginT18">
+                <div class="form-group col-sm-2 marginT18">
                     <label>DFC Owner</label>
                     <div class="dropdown">
                         <p-dropdown [options]="cities" [(ngModel)]="P0000" placeholder="Appukuttan" optionLabel="name"></p-dropdown>
@@ -93,7 +92,7 @@
                 </div>
             </div>
         </div>
-        <div class="ui-g-1 backgroundBlue">
+        <div class="col-sm-1 well backgroundBlue">
             <h4>Status</h4>
             <input type="text" pInputTextarea value="100" class="width30Per"><br>
             <button pButton type="button" (click)="count()" label="Millestone Expectatio"></button>
@@ -105,7 +104,7 @@
     <p-tabView>
         <p-tabPanel header="From latest CAL">
             <div class="ui-g">
-                <div class="ui-g-12">
+                <div class="col-sm-12">
                 <div class="well">
                     <form class="form-horizontal">
                         <div class="form-group">
