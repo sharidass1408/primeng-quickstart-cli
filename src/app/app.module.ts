@@ -7,14 +7,22 @@ import { InputTextModule }  from 'primeng/inputtext';
 import { ButtonModule }  from 'primeng/button';
 import { TableModule }  from 'primeng/table';
 import { DialogModule }  from 'primeng/dialog';
-
+import {PanelModule} from 'primeng/panel';
+import {TabViewModule} from 'primeng/tabview';
+import {DropdownModule} from 'primeng/dropdown';
 import { AppComponent } from './app.component';
+import {CheckboxModule} from 'primeng/checkbox';
+import {InputTextareaModule} from 'primeng/inputtextarea';
+import { DvtoolComponent } from './dvtool/dvtoolcomponent/dvtool.component';
 
 @NgModule({
     declarations: [
-        AppComponent
+        AppComponent,
+        DvtoolComponent
     ],
     imports: [
+        PanelModule,
+        TabViewModule,
         BrowserModule,
         BrowserAnimationsModule,
         FormsModule,
@@ -22,7 +30,10 @@ import { AppComponent } from './app.component';
         HttpClientModule,
         InputTextModule,
         DialogModule,
-        ButtonModule
+        ButtonModule,
+        DropdownModule,
+        CheckboxModule,
+        InputTextareaModule
     ],
     providers: [],
     bootstrap: [AppComponent]
